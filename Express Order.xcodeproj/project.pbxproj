@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		2E60CFBE27BE86CD00468580 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E60CFBD27BE86CD00468580 /* AppDelegate.swift */; };
 		2E60CFC027BE86CD00468580 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E60CFBF27BE86CD00468580 /* SceneDelegate.swift */; };
-		2E60CFC227BE86CD00468580 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E60CFC127BE86CD00468580 /* ViewController.swift */; };
+		2E60CFC227BE86CD00468580 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E60CFC127BE86CD00468580 /* RegisterViewController.swift */; };
 		2E60CFC527BE86CD00468580 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E60CFC327BE86CD00468580 /* Main.storyboard */; };
 		2E60CFC727BE86CF00468580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E60CFC627BE86CF00468580 /* Assets.xcassets */; };
 		2E60CFCA27BE86CF00468580 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E60CFC827BE86CF00468580 /* LaunchScreen.storyboard */; };
+		2ECFD34E27C0343E006F4EB7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECFD34D27C0343E006F4EB7 /* MainViewController.swift */; };
+		2ECFD35027C03453006F4EB7 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECFD34F27C03453006F4EB7 /* OrdersViewController.swift */; };
+		2ECFD35227C03466006F4EB7 /* RakhmetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECFD35127C03466006F4EB7 /* RakhmetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E60CFBA27BE86CD00468580 /* Express Order.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Express Order.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E60CFBD27BE86CD00468580 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E60CFBF27BE86CD00468580 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2E60CFC127BE86CD00468580 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2E60CFC127BE86CD00468580 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		2E60CFC427BE86CD00468580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E60CFC627BE86CF00468580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E60CFC927BE86CF00468580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E60CFCB27BE86CF00468580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ECFD34D27C0343E006F4EB7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2ECFD34F27C03453006F4EB7 /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
+		2ECFD35127C03466006F4EB7 /* RakhmetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RakhmetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +85,10 @@
 		2E60CFD227BE86F900468580 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2E60CFC127BE86CD00468580 /* ViewController.swift */,
+				2E60CFC127BE86CD00468580 /* RegisterViewController.swift */,
+				2ECFD34D27C0343E006F4EB7 /* MainViewController.swift */,
+				2ECFD34F27C03453006F4EB7 /* OrdersViewController.swift */,
+				2ECFD35127C03466006F4EB7 /* RakhmetViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E60CFC227BE86CD00468580 /* ViewController.swift in Sources */,
+				2ECFD35027C03453006F4EB7 /* OrdersViewController.swift in Sources */,
+				2ECFD35227C03466006F4EB7 /* RakhmetViewController.swift in Sources */,
+				2E60CFC227BE86CD00468580 /* RegisterViewController.swift in Sources */,
 				2E60CFBE27BE86CD00468580 /* AppDelegate.swift in Sources */,
 				2E60CFC027BE86CD00468580 /* SceneDelegate.swift in Sources */,
+				2ECFD34E27C0343E006F4EB7 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +325,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3665M2CG46;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Express Order/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -340,6 +353,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3665M2CG46;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Express Order/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
