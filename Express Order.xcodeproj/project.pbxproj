@@ -100,7 +100,6 @@
 			children = (
 				11CAAC2527C3AE480020B301 /* Cell */,
 				2E60CFC127BE86CD00468580 /* RegisterViewController.swift */,
-				2ECFD34D27C0343E006F4EB7 /* MainViewController.swift */,
 				2ECFD34F27C03453006F4EB7 /* OrdersViewController.swift */,
 				2ECFD35127C03466006F4EB7 /* RakhmetViewController.swift */,
 			);
@@ -110,6 +109,7 @@
 		2E60CFD327BE870400468580 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2ECFD34D27C0343E006F4EB7 /* MainViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
