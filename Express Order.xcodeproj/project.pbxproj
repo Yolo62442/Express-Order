@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
+		11CAAC3027C3ECF50020B301 /* RegistrationPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CAAC2F27C3ECF50020B301 /* RegistrationPasswordViewController.swift */; };
 		11CAAC2827C3AE8C0020B301 /* MainMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CAAC2627C3AE8C0020B301 /* MainMenuTableViewCell.swift */; };
 		11CAAC2927C3AE8C0020B301 /* MainMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11CAAC2727C3AE8C0020B301 /* MainMenuTableViewCell.xib */; };
 		2E2BDC5F27C0EEA6002874FE /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BDC5D27C0EEA6002874FE /* OrderTableViewCell.swift */; };
@@ -25,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11CAAC2F27C3ECF50020B301 /* RegistrationPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPasswordViewController.swift; sourceTree = "<group>"; };
 		11CAAC2627C3AE8C0020B301 /* MainMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuTableViewCell.swift; sourceTree = "<group>"; };
 		11CAAC2727C3AE8C0020B301 /* MainMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenuTableViewCell.xib; sourceTree = "<group>"; };
 		2E2BDC5D27C0EEA6002874FE /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
@@ -54,6 +55,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11CAAC2A27C3E99C0020B301 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				2E60CFC127BE86CD00468580 /* RegisterViewController.swift */,
+				11CAAC2F27C3ECF50020B301 /* RegistrationPasswordViewController.swift */,
+			);
+			path = Registration;
 
 		11CAAC2527C3AE480020B301 /* Cell */ = {
 			isa = PBXGroup;
@@ -114,6 +122,7 @@
 		2E60CFD227BE86F900468580 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2ECFD34D27C0343E006F4EB7 /* MainViewController.swift */,
 				11CAAC2527C3AE480020B301 /* Cell */,
 				2E2BDC5C27C0EE6E002874FE /* Cells */
 				2E60CFC127BE86CD00468580 /* RegisterViewController.swift */,
@@ -127,6 +136,7 @@
 		2E60CFD327BE870400468580 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				11CAAC2A27C3E99C0020B301 /* Registration */,
 				2ECFD34D27C0343E006F4EB7 /* MainViewController.swift */,
 			);
 			path = Controller;
@@ -205,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11CAAC3027C3ECF50020B301 /* RegistrationPasswordViewController.swift in Sources */,
 				2E2BDC6227C3DC34002874FE /* OrderDetailsViewController.swift in Sources */,
 				2ECFD35027C03453006F4EB7 /* OrdersViewController.swift in Sources */,
 				2ECFD35227C03466006F4EB7 /* RakhmetViewController.swift in Sources */,
