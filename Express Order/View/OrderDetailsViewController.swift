@@ -1,13 +1,13 @@
 //
-//  MainViewController.swift
+//  OrderDetailsViewController.swift
 //  Express Order
 //
-//  Created by Ainura on 19.02.2022.
+//  Created by Ainura on 21.02.2022.
 //
 
 import UIKit
 
-class MainViewController: UIViewController {
+class OrderDetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

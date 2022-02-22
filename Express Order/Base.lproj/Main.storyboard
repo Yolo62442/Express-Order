@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SOr-nN-eTW">
+
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -15,14 +16,44 @@
                     <view key="view" contentMode="scaleToFill" id="VdX-ap-KhH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zZe-eI-EBw">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="g6c-8a-Kpt"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zZe-eI-EBw" firstAttribute="top" secondItem="g6c-8a-Kpt" secondAttribute="top" id="Ln2-gw-fdL"/>
+                            <constraint firstItem="g6c-8a-Kpt" firstAttribute="trailing" secondItem="zZe-eI-EBw" secondAttribute="trailing" id="VMF-0Q-iWy"/>
+                            <constraint firstItem="g6c-8a-Kpt" firstAttribute="bottom" secondItem="zZe-eI-EBw" secondAttribute="bottom" id="atk-jE-Foi"/>
+                            <constraint firstItem="zZe-eI-EBw" firstAttribute="leading" secondItem="g6c-8a-Kpt" secondAttribute="leading" id="tLA-5z-HsF"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Мои заказы" image="lanyardcard" catalog="system" id="U5U-Xu-rD6"/>
+                    <connections>
+                        <outlet property="ordersTableView" destination="zZe-eI-EBw" id="jHl-AF-gPX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="noD-fi-wXF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-110.14492753623189" y="226.33928571428569"/>
+        </scene>
+        <!--OrderDetails-->
+        <scene sceneID="djg-J8-d45">
+            <objects>
+                <viewController storyboardIdentifier="OrderDetailsViewController" title="OrderDetails" id="VaM-Gw-FXY" customClass="OrderDetailsViewController" customModule="Express_Order" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HjS-mV-Sds">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="N1p-3p-lL7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yz6-sS-k0R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-169" y="244"/>
         </scene>
         <!--Main-->
         <scene sceneID="xaz-nO-HSX">
@@ -31,10 +62,25 @@
                     <view key="view" contentMode="scaleToFill" id="crq-6b-6O0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yXj-Du-9LV">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="kwO-UP-dnv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yXj-Du-9LV" firstAttribute="top" secondItem="kwO-UP-dnv" secondAttribute="top" id="GAr-XU-uEH"/>
+                            <constraint firstItem="kwO-UP-dnv" firstAttribute="bottom" secondItem="yXj-Du-9LV" secondAttribute="bottom" id="SOO-Za-4TT"/>
+                            <constraint firstItem="yXj-Du-9LV" firstAttribute="leading" secondItem="kwO-UP-dnv" secondAttribute="leading" id="UIv-NX-o2w"/>
+                            <constraint firstItem="kwO-UP-dnv" firstAttribute="trailing" secondItem="yXj-Du-9LV" secondAttribute="trailing" id="yvs-ci-bYn"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Главная" image="house" catalog="system" id="1Mt-Dc-gIU"/>
+                    <navigationItem key="navigationItem" title="Заказ с собой" id="l8R-RA-7Fr"/>
+                    <connections>
+                        <outlet property="tableView" destination="yXj-Du-9LV" id="q36-iO-UDh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7og-51-EFs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -50,7 +96,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Rrq-lI-tCP" kind="relationship" relationship="viewControllers" id="0Da-WY-doX"/>
+                        <segue destination="QdE-ze-Q34" kind="relationship" relationship="viewControllers" id="0Da-WY-doX"/>
                         <segue destination="99e-9q-iMW" kind="relationship" relationship="viewControllers" id="wZ8-qG-TEQ"/>
                         <segue destination="bD4-uF-Gyn" kind="relationship" relationship="viewControllers" id="adm-FT-tJU"/>
                     </connections>
@@ -69,7 +115,7 @@
                         <viewLayoutGuide key="safeArea" id="6wl-ow-stR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Рахмет" image="rahmet_logo" landscapeImage="rahmet_logo" selectedImage="rahmet_logo" id="GPb-Ax-lk6"/>
+                    <tabBarItem key="tabBarItem" title="Рахмет" image="logo" landscapeImage="logo" selectedImage="logo" id="GPb-Ax-lk6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NWZ-m0-b6b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -314,11 +360,30 @@
             </objects>
             <point key="canvasLocation" x="-3668.115942028986" y="109.82142857142857"/>
         </scene>
+        <!--Главная-->
+        <scene sceneID="J4P-75-KTB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QdE-ze-Q34" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Главная" image="house" catalog="system" id="1Mt-Dc-gIU"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="zQ2-CF-UMe">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Rrq-lI-tCP" kind="relationship" relationship="rootViewController" id="gTD-RB-m98"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zhs-eq-zjs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1020.2898550724639" y="-424.55357142857139"/>
+        </scene>
     </scenes>
     <resources>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="lanyardcard" catalog="system" width="108" height="128"/>
-        <image name="rahmet_logo" width="40" height="40"/>
+        <image name="logo" width="40" height="40"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
