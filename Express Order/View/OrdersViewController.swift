@@ -6,24 +6,77 @@
 //
 
 import UIKit
+protocol DetailsDelegate: AnyObject{
+    func sendToDetailVC()
+}
 
 class OrdersViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var ordersTableView: UITableView!
+    var cellId = "OrderTableViewCell"
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        configureTableView()
+        // Do any additional setup after loading the view.
     }
-    */
+    func configureTableView(){
+        ordersTableView.delegate = self
+        ordersTableView.dataSource = self
+        ordersTableView.register(UINib(nibName: cellId, bundle: nil), forCellReuseIdentifier: cellId)
+           
+       }
+    
 
 }
+
+extension OrdersViewController: DetailsDelegate{
+    func sendToDetailVC() {
+        /*let vc = storyboard?.instantiateViewController(identifier: "OrderDetailsViewController") as! OrderDetailsViewController
+                
+                navigationController?.pushViewController(vc, animated: true)*/
+        print("hello")
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+                if let vc = storyboard.instantiateViewController(withIdentifier: "OrderDetailsViewController") as? OrderDetailsViewController{
+                    vc.modalPresentationStyle = .fullScreen
+                    present(vc, animated: true, completion: nil)
+                }
+                  
+    }
+    
+}
+
+extension OrdersViewController: UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! OrderTableViewCell
+        cell.delegate = self
+        cell.layer.borderWidth = 0.5
+        cell.layer.borderColor = UIColor.opaqueSeparator.cgColor
+        cell.clipsToBounds = true
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 105
+    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 10
+    }
+  
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 5
+    }
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+            let headerView = UIView()
+        headerView.backgroundColor = UIColor.clear
+            return headerView
+        }
+}
+ 
