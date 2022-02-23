@@ -13,6 +13,8 @@
 		2E2BDC5F27C0EEA6002874FE /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BDC5D27C0EEA6002874FE /* OrderTableViewCell.swift */; };
 		2E2BDC6027C0EEA6002874FE /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E2BDC5E27C0EEA6002874FE /* OrderTableViewCell.xib */; };
 		2E2BDC6227C3DC34002874FE /* OrderDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BDC6127C3DC34002874FE /* OrderDetailsViewController.swift */; };
+		2E2BDC6527C408CE002874FE /* OrderListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BDC6327C408CE002874FE /* OrderListTableViewCell.swift */; };
+		2E2BDC6627C408CE002874FE /* OrderListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E2BDC6427C408CE002874FE /* OrderListTableViewCell.xib */; };
 		2E60CFBE27BE86CD00468580 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E60CFBD27BE86CD00468580 /* AppDelegate.swift */; };
 		2E60CFC027BE86CD00468580 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E60CFBF27BE86CD00468580 /* SceneDelegate.swift */; };
 		2E60CFC227BE86CD00468580 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E60CFC127BE86CD00468580 /* RegisterViewController.swift */; };
@@ -31,6 +33,8 @@
 		2E2BDC5D27C0EEA6002874FE /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 		2E2BDC5E27C0EEA6002874FE /* OrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
 		2E2BDC6127C3DC34002874FE /* OrderDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsViewController.swift; sourceTree = "<group>"; };
+		2E2BDC6327C408CE002874FE /* OrderListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListTableViewCell.swift; sourceTree = "<group>"; };
+		2E2BDC6427C408CE002874FE /* OrderListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderListTableViewCell.xib; sourceTree = "<group>"; };
 		2E60CFBA27BE86CD00468580 /* Express Order.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Express Order.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E60CFBD27BE86CD00468580 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E60CFBF27BE86CD00468580 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +80,8 @@
 			children = (
 				2E2BDC5D27C0EEA6002874FE /* OrderTableViewCell.swift */,
 				2E2BDC5E27C0EEA6002874FE /* OrderTableViewCell.xib */,
+				2E2BDC6327C408CE002874FE /* OrderListTableViewCell.swift */,
+				2E2BDC6427C408CE002874FE /* OrderListTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -204,6 +210,7 @@
 				2E2BDC6027C0EEA6002874FE /* OrderTableViewCell.xib in Resources */,
 				2E60CFC727BE86CF00468580 /* Assets.xcassets in Resources */,
 				2E60CFC527BE86CD00468580 /* Main.storyboard in Resources */,
+				2E2BDC6627C408CE002874FE /* OrderListTableViewCell.xib in Resources */,
 				11CAAC2927C3AE8C0020B301 /* MainMenuTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +226,7 @@
 				2E2BDC6227C3DC34002874FE /* OrderDetailsViewController.swift in Sources */,
 				2ECFD35027C03453006F4EB7 /* OrdersViewController.swift in Sources */,
 				2ECFD35227C03466006F4EB7 /* RakhmetViewController.swift in Sources */,
+				2E2BDC6527C408CE002874FE /* OrderListTableViewCell.swift in Sources */,
 				2E60CFC227BE86CD00468580 /* RegisterViewController.swift in Sources */,
 				2E60CFBE27BE86CD00468580 /* AppDelegate.swift in Sources */,
 				2E60CFC027BE86CD00468580 /* SceneDelegate.swift in Sources */,
